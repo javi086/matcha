@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--Esto indica al navegador el tipo de versión de documento que es-->
+<html lang="en">
+  <!--La etiqueta HTML representa la estructra inicial del documento y esta etiqueta es de tipo grupal.
+      lang ayuda a definir e lenguaje principal en el que el navegador debe interpretar la información-->
+
+  <head>
+    <!--Aqui se contiene toda información importante (metainformación) no visible dentro del navegador a excepción del title-->
+    <meta charset="UTF-8" />
+    <!--Indica el tipo de caracteres que estaremos utilizando-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- Agregando hoja de estilos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Playfair+Display:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Matcha</title>
+  </head>
+
+  <body>
+    <!--Contiene toda la información que sera visuble en el navegador-->
+
+    <header class="main_header">
+      <a href="/" class="logo">
+        <img src="" alt="Matcha" />
+      </a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="">Platform</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Customer</a></li>
+          <li><a href="">Resource</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <a href="">Sign in</a>
+        <button type="submit">Start free trial</button>
+      </div>
+    </header>
+    <main>
+      <h1>Build your blog. Build your business.</h1>
+      <p>
+        Instantly publish articles, drive more traffic, grow your email list,
+        and see your blog’s impact on sales.
+      </p>
+
+      <form action="">
+        <!--action nos permite relizar un logica especifica, como enviar información a una BD-->
+        <input type="text" />
+        <button type="submit" id="button_try">Try it now &rarr;</button>
+      </form>
+
+      <p>
+        Start publishing today with a
+        <strong style="color: #8b8b8bcc">free 7-day trial.</strong>
+      </p>
+      <p><strong class="promotions">No credit card</strong> required.</p>
+
+      <img
+        src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png"
+        alt="imagen capterra"
+      />
+      <!--Ingresando una imagen por medio de ruta absoluta-->
+    </main>
+
+    <section class="publish_section_container">
+     
+      <!--"Controls" permite auto reporducir el video y "Poster" permite mostrar una imagen antes de reproducir el video -->
+      <video
+        controls
+        poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg"
+        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4"
+      ></video>
+
+      <!--La etiqueta "Source" especificamos el formato del video, esta etiqueta solo sirve para trabajr con la etiqueta video-->
+
+      <source
+        type="video/webm"
+        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm"
+      />
+
+      <!--Este segundo soruce servira por si el primer source llega a fallar y el video no se carga, entonces entra este segundo source como un respaldo-->
+      <source
+        type="video/mp4"
+        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4"
+      />
+    
+      <!--Se usa article pues hay una subdivisión interna dentro de section, tambien se podría usar div-->
+
+      <article class="publish">
+        <h3>Publish to your blog in minutes, not hours.</h3>
+        <p>
+          Your blog is your most powerful asset to build, engage, and retain a
+          loyal audience. But you don’t have hours to create content that may or
+          may not work. With Matcha, instantly publish from our library of
+          10,000+ professionally written articles and build your email list
+          faster with our powerful conversion tool.
+        </p>
+        <form>
+          <p>Start publishing today</p>
+          <div>
+            <input type="text" placeholder="Enter email" />
+            <button>Start my trial</button>
+          </div>
+        </form>
+      </article>
+    </section>
+
+    <section class="features_section_container">
+      <article>1</article>
+      <article>2</article>
+      <article>3</article>
+      <article>4</article>
+    </section>
+
+    <section class="growing_container_section">
+      
+      <div class="growing_section_left">
+          <h2>Growing ecommerce brands rely on Matcha.</h2>
+          <p>
+            Are you tired of wasting time publishing blog articles to only see a trickle of traffic and no impact on sales?
+            Join hundreds of business owners and
+            ecommerce marketers who rely on Matcha for quality content and consistent performance from their blogs.
+          </p>
+        <button>Who Uses Matcha?</button>
+      </div>
+
+      <div class="growing_section_right">
+        <h4>dsadadasdasdasdsadsadsdasdasdad</h4>
+      </div>
+    </section>
+<section class="how_works_section_container">
+  <h2 class="tittle">How does Match work?</h2>
+  <p class="description">Your blog can be so much more than window dressing. Use Matcha’s simple formula to transform your blog into an ecommerce growth engine.</p>
+  <button>Explore the Platform</button>
+<div class="steps">
+  <article>1</article>
+  <article>2</article>
+  <article>2</article>
+  <article>2</article>
+</div>
+
+</section>
+
+  </body>
+</html>
