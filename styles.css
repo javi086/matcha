@@ -1,181 +1,438 @@
-body{
-    background-color: #fffbf7;
-    color: #46484c;
-    font-family: 'Cairo', sans-serif;
-    font-family: 'Playfair Display', serif;
-    margin: 0;
-    padding: 0;
+body {
+
+  color: #46484c;
+  font-family: 'Cairo', sans-serif;
+  font-family: 'DM Serif Display', serif;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
 }
 
-header > * { /* El simbolo > indica que estamos anidando caracterisitcas a los elementos internos */
-    display: inline-block;
-    font-size: 16px;
-    vertical-align: middle;
-    height: 100%; /*Ocupar todo el alto del padre*/
-    line-height: 45px; /*Espacio entre lineas */
+
+/*********************************************************************************************
+                                  Header Section
+*********************************************************************************************/
+
+header{
+  max-width: 100%;
+}
+header > .navbar{
+  width: 100%;
+  text-align: center;
+  color:#025157;
+  font-weight: 500;
 }
 
-li{
-    display: inline;
-}
-.logo > img {
-    width: 15%;
-   
-  }
-  
-  .navbar {
-    width: 50%;
-    
-  }
 
-  .navbar > ul > li > a{
-    text-decoration: none;
-    text-align: center;
-    font-weight: 500; /*Permite dar anchura en las letras*/
-    color: purple;
 
-  }
-
-  .actions {
-    width: 15%;
-    text-align: right;
-    font-size: 14px;
-    font-weight: 600;
-  }
-
-  .actions > a{
-    text-decoration: none;
-    color: #82CD47;
-  }
-
-  .actions > button{
-    background-color: #82CD47;
-    color: white;
-    padding: 15px;
-  }
-
-main{
-    margin-top: 140px;
-    text-align: center;
-    text-align: center;
+.actions {
+  width: 15%;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 600;
 }
 
-section > *{
-    display:inline-block;
-    margin-right: 20px;
-    vertical-align: top;
+.actions>a {
+  text-decoration: none;
+  color: #82CD47;
 }
 
-section > h2{
-    color: green;
+.actions>button {
+  background-color: #82CD47;
+  color: white;
+  padding: 15px;
+}
+
+
+/*********************************************************************************************
+                                  Main Section
+*********************************************************************************************/
+
+main {
+  margin-top: 140px;
+  text-align: center;
+
+}
+
+main>h1 {
+  font-size: 50px;
+}
+
+main>img {
+  width: 50%;
+  height: 50%;
+}
+
+section>* {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+}
+
+section>h2 {
+  color: green;
 }
 
 /*********************************************************************************************
                                   Publish Section
 *********************************************************************************************/
- .publish_section_container{
+.publish_section_container {
   display: flex;
   width: 70%;
   margin: 100px auto;
   align-items: center;
- }
+}
 
 
-.publish_section_container > video{
+.publish_section_container>video {
   height: 300px;
   width: 50%;
 }
 
-.publish_section_container > article{
+.publish_section_container>article {
   height: 300px;
   width: 50%;
 }
 
-
-/*********************************************************************************************
-                                  Growing Section
-*********************************************************************************************/
-.growing_container_section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color:#82CD47;
-  max-width: 100%;
-  height: 600px;
-}
-
-.growing_section_left{
-  margin-right: 5%;
-  width: 40%;
-}
-.growing_section_left > h2{
-font-size:xx-large;
-}
-.growing_section_left > button{
-  background-color: green;
-  color: white;
-  padding: 15px;
-}
 
 /*********************************************************************************************
                                   Features Section
 *********************************************************************************************/
 
-.features_section_container{
-  background-color: red;
+.features_section_container {
+  background-color: #025157;
+  padding: 80px 180px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /*Indicamos el numero de columanas y su ancho para todas*/
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 330px);
-   /*grid-template: repeat(2, 1fr) / repeat(2, 330px);Esto el lo mismo que el codigo de arriba usando columns y rows, pero en este caso es por medio de atajos*/
-  justify-content: center;
+  /*Indicamos el numero de columanas y su ancho para todas*/
+  /*grid-template: repeat(2, 1fr) / repeat(2, 330px);Esto el lo mismo que el codigo de arriba usando columns y rows, pero en este caso es por medio de atajos*/
   /*grid-gap: 30px;*/
 }
 
-.features_section_container > article {
-  background-color: green;
+.features_section_container>.feature-card {
+  background-color: white;
   margin: 10px;
-  
+  display: grid;
+  grid-template-columns: 500px 300px;
 }
+
+.feature-card>.feature-content {
+  height: auto;
+  display: block;
+  padding: 50px 30px 0 30px;
+}
+
+.feature-card>.feature-image {
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.feature-image>img {
+  max-width: 90%;
+  height: auto;
+  padding: 20% 0 0 0;
+
+
+}
+
+
+
+/*********************************************************************************************
+                                  Growing Section
+*********************************************************************************************/
+.growing_container_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a1d683;
+  max-width: 100%;
+  height: 600px;
+}
+
+.growing_container_section>.growing_section_left {
+  margin-right: 5%;
+  width: 40%;
+}
+
+.growing_section_left>h2 {
+  font-size: 50px;
+}
+
+.growing_container_section>.growing_section_left>button {
+  background-color: green;
+  color: white;
+  padding: 15px;
+  border-radius: 14%;
+}
+
+.growing_section_right {
+  background-color: white;
+}
+
+.growing_container_section>.growing_section_right {
+  height: auto;
+  width: 350px;
+}
+
+.growing_section_right>img {
+  width: 350px;
+  height: 250px;
+}
+
+.growing_section_right>article {
+  padding: 30px;
+}
+
+.growing_section_right>article>p {
+  font-size: 20px;
+
+}
+
+.growing_section_right>article>button {
+  width: 100%;
+  height: 40px;
+  background-color: green;
+  color: white;
+  border-radius: 5%;
+  display: block;
+  margin-top: 10px;
+
+}
+
+/*
+.success-stories {
+  background-color: #a1d683;
+  padding: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.success-stories .overview {
+  flex: 2;
+  padding-right: 100px;
+}
+
+.success-stories .overview h2 {
+  font-family: "Alegreya", serif;
+  font-size: 51px;
+  line-height: 61px;
+  color: #025157;
+}
+
+.success-stories .overview p {
+  color: #343434;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.success-stories .overview button {
+  font-size: 14px;
+  padding: 12px 12px 6px 12px;
+  border-radius: 8px;
+  height: 45px;
+  font-weight: 600;
+  margin-left: 0;
+}
+
+.success-stories .overview img {
+  width: 500px;
+  max-width: 100%;
+}
+*/
+
 
 /*********************************************************************************************
                                   How Wors Section
 *********************************************************************************************/
-.how_works_section_container{
+.how_works_section_container {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 70px 50px 100px;
   background-color: #fffbf7;
   grid-row-gap: 10px;
+  grid-template-rows: repeat(3, 65px);
   /*padding: 5% 10%;*/
 }
-.how_works_section_container > *{
+
+.how_works_section_container>* {
   display: block;
   margin: 0;
+  text-align: center;
 }
-.how_works_section_container > .tittle{
-  background-color: blue;
+
+.how_works_section_container>.tittle {
   color: #025157;
   font-size: 50px;
-}
-
-.how_works_section_container > .description{
- background-color: yellow;
-  max-width: 50%;
+  width: 100%;
 
 }
 
-.how_works_section_container >button{
-  max-width: 12%;
+.how_works_section_container>.description {
+  max-width: 100%;
+  padding: 0 30%;
+}
+
+.how_works_section_container>.button_how {
+  width: 160px;
   height: 40px;
   background-color: #025157;
   color: #fff;
   border-radius: 5%;
+  margin: 0 0 0 45%;
+  padding: 0;
 }
 
 
-.how_works_section_container > .steps{
-  max-width: 500px;
+.how_works_section_container>.steps {
   display: grid;
-  grid-template-columns: 100px 50px 50px 50px;
+  grid-template-columns: repeat(4, 330px);
+  grid-template-rows: repeat(1, 600px);
+  padding: 30px 0;
+  justify-content: center;
+  column-gap: 40px;
+  border: solid 2px;
+
 }
 
+
+.description >  a {
+  color: #67b54b;
+  text-decoration: none;
+}
+
+
+.steps>.card_steps {
+  border: solid 1px;
+}
+
+
+.steps_image {
+  width: auto;
+  height: auto;
+  margin-bottom: 30px;
+
+}
+
+.steps_image>img {
+  max-width: 99%;
+  height: 300px;
+
+}
+.steps_info{
+  width: auto;
+  height: 40%;
+}
+
+.steps_info>b {
+  font-size: 30px;
+  color:#025157;
+}
+
+.steps_info> .link_steps{
+ color: #67b54b;
+ text-decoration: none;
+}
+
+
+
+
+
+/*********************************************************************************************
+                                  Media Queries Section
+*********************************************************************************************/
+
+@media (max-width:575px) {
+
+  /******Header******/
+  header{
+    width: auto;
+  }
+  .navbar{
+    display: flex;
+  }
+  
+  .navbar,
+  .actions {
+    display: none;
+  }
+  /******Main******/
+  main {
+    width: auto;
+    height: auto;
+    background-color: pink;
+    margin: 10px 0;
+  }
+
+  main > h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  main > p {
+    font-size: 20px;
+  }
+
+
+  /******Publish_section_container******/
+  .publish_section_container {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 5%;
+  }
+
+  .publish_section_container>video {
+    height: 50%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .publish_section_container>article {
+    width: 100%;
+  }
+
+  /************features_section_container****************/
+
+  .features_section_container {
+    display: grid;
+    grid-template-columns: 100%; 
+    grid-template-rows: repeat(4, 1fr);
+    padding: 5%;
+  }
+
+  .features_section_container>.feature-card {
+    display: block;
+    width: 100%;
+    margin: 2% 0;
+  }
+
+ /************growing_container_section****************/
+
+ .growing_container_section{
+  display: grid;
+  background-color:#67b54b;
+  grid-template-columns: 100%;
+  grid-template-rows: 100% auto;
+  padding: 3%;
+ }
+
+ .growing_container_section > .growing_section_left{
+  width: 100%;
+  font-size: 15px;
+  background-color: blue;
+ }
+
+ .growing_section_left > h2{
+font-size:20px;
+ }
+ 
+.growing_container_section > .growing_section_right{
+  background-color: yellow;
+  width: 100%;
+  justify-content: center;
+}
+
+
+}
