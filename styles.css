@@ -114,7 +114,7 @@ section>h2 {
   background-color: white;
   margin: 10px;
   display: grid;
-  grid-template-columns: 500px 300px;
+  grid-template-columns: auto auto;
 }
 
 .feature-card>.feature-content {
@@ -160,7 +160,7 @@ section>h2 {
 }
 
 .growing_container_section>.growing_section_left>button {
-  background-color: green;
+  background-color: #025157;
   color: white;
   padding: 15px;
   border-radius: 14%;
@@ -192,7 +192,7 @@ section>h2 {
 .growing_section_right>article>button {
   width: 100%;
   height: 40px;
-  background-color: green;
+  background-color: #025157;
   color: white;
   border-radius: 5%;
   display: block;
@@ -250,37 +250,32 @@ section>h2 {
 .how_works_section_container {
   display: grid;
   grid-template-columns: 100%;
-  background-color: #fffbf7;
+  grid-template-rows: repeat(3, auto);
   grid-row-gap: 10px;
-  grid-template-rows: repeat(3, 65px);
-  /*padding: 5% 10%;*/
+  background-color: #fffbf7;
 }
 
 .how_works_section_container>* {
-  display: block;
-  margin: 0;
   text-align: center;
 }
 
 .how_works_section_container>.tittle {
   color: #025157;
   font-size: 50px;
-  width: 100%;
+  margin-top: 100px;
 
 }
 
 .how_works_section_container>.description {
-  max-width: 100%;
   padding: 0 30%;
 }
 
-.how_works_section_container>.button_how {
+.button_how > button{
   width: 160px;
   height: 40px;
   background-color: #025157;
   color: #fff;
   border-radius: 5%;
-  margin: 0 0 0 45%;
   padding: 0;
 }
 
@@ -288,7 +283,7 @@ section>h2 {
 .how_works_section_container>.steps {
   display: grid;
   grid-template-columns: repeat(4, 330px);
-  grid-template-rows: repeat(1, 600px);
+  grid-template-rows: 600px;
   padding: 30px 0;
   justify-content: center;
   column-gap: 40px;
@@ -345,7 +340,7 @@ section>h2 {
 
 @media (max-width:575px) {
 
-  /******Header******/
+  /******Header_Section******/
   header{
     width: auto;
   }
@@ -357,7 +352,7 @@ section>h2 {
   .actions {
     display: none;
   }
-  /******Main******/
+  /******Main_Section******/
   main {
     width: auto;
     height: auto;
@@ -375,7 +370,7 @@ section>h2 {
   }
 
 
-  /******Publish_section_container******/
+  /******Publish_section******/
   .publish_section_container {
     width: auto;
     height: auto;
@@ -393,7 +388,7 @@ section>h2 {
     width: 100%;
   }
 
-  /************features_section_container****************/
+  /************features_section****************/
 
   .features_section_container {
     display: grid;
@@ -408,31 +403,93 @@ section>h2 {
     margin: 2% 0;
   }
 
- /************growing_container_section****************/
+ /************growing_section****************/
 
  .growing_container_section{
   display: grid;
-  background-color:#67b54b;
-  grid-template-columns: 100%;
-  grid-template-rows: 100% auto;
+  grid-template-rows: repeat(2, auto);
   padding: 3%;
+  height: auto;
+  gap: 20px 0;
  }
 
  .growing_container_section > .growing_section_left{
   width: 100%;
   font-size: 15px;
-  background-color: blue;
+  margin: 0;
  }
 
  .growing_section_left > h2{
-font-size:20px;
+  font-size:20px;
+ }
+
+ .growing_container_section>.growing_section_left>button {
+  padding: 5px;
  }
  
 .growing_container_section > .growing_section_right{
-  background-color: yellow;
   width: 100%;
-  justify-content: center;
 }
+.growing_section_right > img{
+ width: 100%;
+ height: 300px;
+}
+
+ /************how_works_section****************/
+.how_works_section_container{
+  background-color: red;
+  display: grid;
+}
+
+.how_works_section_container > .tittle{
+  margin-top: 50px;
+}
+
+.how_works_section_container > .description{
+  font-size: 20px;
+  padding: 0;
+}
+
+ .button_how > button{
+  width: 250px;
+  height: auto;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 10%;
+  
+
+}
+.how_works_section_container  > .steps {
+  display: grid;
+  grid-template-columns:  auto;
+  grid-template-rows: repeat( 4, auto);
+  border: solid 5px blue;
+  text-align: left;
+}
+ .steps > .card_steps{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  background-color:yellow;
+
+  
+
+ }
+
+ .card_steps > .steps_image{
+  border: solid wheat 4px;
+  height: 100%;
+  
+ }
+
+ .card_steps > .steps_info{
+  border: solid wheat 4px;
+  height: 100%;
+  
+ }
 
 
 }
+
+
+
+
