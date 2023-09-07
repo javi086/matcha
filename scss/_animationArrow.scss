@@ -1,0 +1,66 @@
+.flecha {
+    margin: 0 auto;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 35px;
+
+    .flecha-contenedor {
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        margin-bottom: 65px;
+
+        .flecha-animada {
+            position: absolute;
+            animation-name: up-and-down, alrededor;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            width: 130px;
+            height: 130px;
+
+            img {
+                width: 130px;
+                transform: rotate(-90deg);
+            }
+        }
+
+        @keyframes alrededor {
+
+            from {
+                left: -270px;
+            }
+
+            to {
+                left: 270px;
+            }
+
+        }
+        @keyframes up-and-down {
+            0%{
+                top: 0; /*Aqui inicia la animación*/
+            }
+
+            25%{
+                top: -30px; /*Este es el punto donde alcanza la mitad del limite de los 60px, moviendose hacia abajo*/
+            }
+
+            50%{
+                top: -60px; /*Este es el punto donde alcanza el limite de los 60px*/
+            }
+
+            75%{
+                top: -30px; /*Este es el punto donde alcanza la mitad del limite de los 60px, moviendose hacia arriba*/
+            }
+
+            100%{
+                top: 0; /*Aqui termina la animación, ubicando el elemento en el punto de inicio*/
+            }
+
+
+        }
+
+    }
+
+}
